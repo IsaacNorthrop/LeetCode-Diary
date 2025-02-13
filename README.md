@@ -87,6 +87,14 @@ Return result
 If the stack is empty, return true
 If it is not, return false
 
+	242. Valid Anagram
+ If the strings aren't the same length, return false
+ Initialize two unordered_maps, one for each string
+ iterate to the length of the strings, if a letter doesn't exists as a string, initialize a map to that key at 0
+ else increment that map
+ if the maps are the same, return true
+ else return false
+
 
 
 
