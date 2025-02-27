@@ -95,6 +95,14 @@ If it is not, return false
  if the maps are the same, return true
  else return false
 
+ 	1957. Form Special String
+if the length is less than 3, return s
+Iterate through the string until 2 characters from the last one.
+if the current character and the next two are the same, mark down the index of the third character, and count how many instances of the repeated character are after third one.
+Use erase() to erase all those characters.
+return s.
+  
+
 
 
 
