@@ -101,6 +101,16 @@ Iterate through the string until 2 characters from the last one.
 if the current character and the next two are the same, mark down the index of the third character, and count how many instances of the repeated character are after third one.
 Use erase() to erase all those characters.
 return s.
+
+	2399. Check Distances Between Same Letters
+ Initialize visited unordered_map
+ iterate through the string
+ calculate the index of the distance, but taking the current character and subtracting 'a' (first lowercase letter) to get the ASCII code
+ if that character has already been visited, continue
+ else mark it as visited
+ if the sum of the current character's index, the distance to the next one + 1 is greater than the string's length, return false
+ if the current character is different than the one distance[index] away from the current character, return false.
+ return true if the loop completes.
   
 
 
