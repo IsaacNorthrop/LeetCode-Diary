@@ -111,6 +111,12 @@ return s.
  if the sum of the current character's index, the distance to the next one + 1 is greater than the string's length, return false
  if the current character is different than the one distance[index] away from the current character, return false.
  return true if the loop completes.
+
+ 	2215. Find the difference of two arrays
+  Initialize two sets(unordered_map) with all the values from both vectors.
+  Initialize two vectors that will hold each difference.
+  for all the values in each set, if a value isn't in the other (use .count()), add it to the difference vector.
+  Return {difference1, difference2}
   
 
 
